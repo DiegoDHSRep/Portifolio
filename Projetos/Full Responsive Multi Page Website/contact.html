@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>UNIFESP Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300&family=Inter:wght@200;400;500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-window-close' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-------------------------Contact us content------------------>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116996.86325543407!2d-46.79585520273442!3d-23.598881900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a3ac9c7f177%3A0x7cb5a81f9d666bdb!2sUniversidade%20Federal%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1704392183717!5m2!1spt-BR!2sbr" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class='bx bxs-home-alt-2'></i>
+                <span>
+                    <h5>Rua Sena Madureira, n.º 1.500</h5>
+                    <p> Vila Clementino - São Paulo - SP </p>
+                </span>
+            </div>
+            <div>
+                <i class='bx bx-phone-call'></i>
+                <span>
+                    <h5>(11) 3385-4100</h5>
+                    <p>Monday to Saturday, 8AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class='bx bx-envelope' ></i>
+                <span>
+                    <h5>unifesp@gmail.com</h5>
+                    <p>Email us yoru query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<!-------------------footer------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consecetur adispiscing elit.
+        Pellentesque aliquet turpis nulla, eleifed faucibus est<br>
+        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus</p>
+    <div class="icons">
+        <i class='bx bxl-meta'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-instagram' ></i>
+        <i class='bx bxl-linkedin'></i>
+    </div>
+    <p>Made with <i class='bx bx-heart'></i> by Diego Henrique</p>
+</section>
+
+
+<!----------------------------JavaScript for toggle menu--------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

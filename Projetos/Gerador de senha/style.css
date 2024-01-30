@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    width: 100%; /*todo site sempre fica com 100% de largura, ou seja, vai pegar tudo*/
+    margin: 0 auto; /*Sempre no centro*/
+    box-sizing: border-box;
+}
+
+body{
+    background: #18181b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /*tudo no centro*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 600px; /*largura maxima*/
+    margin-bottom: 24px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: #fff;
+    font-size: 22px;
+}
+
+.slider{
+/*pra tirar a aparencia do slider = apperence: none*/
+    width: 100%;
+    border-radius: 8px;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #49337d;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 35px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.button-cta:hover{
+    background-color: #382760;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #212121;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tootlip{
+    color: #fff;
+    position: relative;
+    top: 5px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tootlip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
+
+.footer{
+    width: 256px;
+    position: fixed;
+    color: #fff;
+    bottom: 0;
+}

@@ -1,0 +1,22 @@
+:root{
+    /*fonts*/
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /*Colors*/
+    --text-base-dark: #000;
+    --text-base-light: #fff;
+    --text-sub: #a7a7a7;
+
+    --background-color-dark: #121212;
+    --background-color-gray: #d8d6d6;
+    --background-color-white: #fff;
+
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,0,0.7);
+    --bg-black: #000;
+    --bg-24: #242424;
+
+    /*espaçamento*/
+    --grid-gap: 24px;
+    --column-count: 5;
+}
